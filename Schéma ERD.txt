@@ -1,0 +1,11 @@
+Schéma ERD
+
+[0..1]		--> Derriere le nom de l'attribut pour le rendre facultatif
+
+Les associations 
+ un rond 		: si facultatives 		--> Une occurence A peut n etre relié a aucune occurence B
+ une barre		: association obligatoire 	--> Une occurence A doit obligatoirement etre relié a au moins une occurence B
+ Deux barres		: Exactement un			--> Une occurence A doit etre relié a une et une seule occurence B 
+ trois barres		: associations pluriels		--> Une occurence A peut etre relié a plusieurs occurencee B
+ Un rond et 3 barres	: Zéro ou plusieurs 		--> Une occurence A peut etre relié a plusieurs ou aucune occurence B 
+ 
