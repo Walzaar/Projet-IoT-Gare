@@ -1,0 +1,32 @@
+Sur Win 10, toutes les catégories d'audit sont désactivés de base.
+Une stratégie d'audit de base va nous permettre de définir les catégories d'évenements en rapport avec la sécurité a auditer 
+
+Voici les différentes catégories : 
+	Evenements de connexion aux comptes
+	Gestions des comptes et groupes (modifications, création ou suppression)
+	Acces au  service d'annuaire
+	Evenements de connexion locale ou distante
+	Acces aux objets ( répertoires ou fichiers particuliers)
+	Modifications de stratégie
+	Utilisation des privileges ( changer l'heure, s'approprier un répertoire ou un fichier, redemarrer la machine, faire une backup ou une restauration )
+	Suivi des processus
+	Evenements systeme
+
+
+Les différentes stratégies se trouvent dans la Stratégie de sécurité locale
+Pour y acceder : taper secpol.msc dans la barre de recherche windows
+L'event sera ajouté au jouranl de windows Sécurité situé dabs l'app Observateur d'évenements
+
+Trois grands journaux windows :
+	Application  --> recoit des messages de toute application qui décide d'en envoyer
+	System récoit des messages du systeme d'exploitation lui-meme et des différentes composantes 
+	Sécurité --> recoit tous les messages d'audit 
+
+Pour chaque event on retrouvera des indications : 
+	ID
+	Nom de l'objet
+Nom de l'usager
+	Nom de l'application
+	La catégorie 
+	Son succes ou échec ( statut)
+

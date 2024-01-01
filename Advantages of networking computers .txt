@@ -1,0 +1,39 @@
+Advantages of networking computers :
+	- Sharing files 		: once computers are networked
+	- Sharing resources 	: printers, scanners, hard drives and other resources can all be shared. Sharing an Internet connection is one of the main reasons many networks are setup
+	- Centralised backup - files saved on the server can be backed up on an automatic schedule. The backup copu will be kept offsite 
+
+Connecting computer in a LAN  is likely to have a significant effect on productivity
+
+	For Home Network 
+		Peer-to-Peer network may be a good choice because it is inexpensive to set up and not difficult to maintain. Users will still be able to share resources but there is no central computer or backup and security is much weaker. For these reasons, it is not a good choice for a business
+
+	For Business
+		Client-server network offers the advantages od additional security with files stored on the server. A second major advantage is that backups are done centrally, propably on an automatic schedul, and so the individual users are less likely to lose work in the event of a catastrophe. It will be one person's responsibility to see that backup copies are stored off-site in a secure location
+
+A Client-server network will be more complex to set up and will need a professional to maintain it. Network users will not be able to change settings or access rights to particular areas; these will all be set by the network manager. 
+
+The cost of setting up a client-server system is much greater than the cost of setting up a P2P network
+
+Security 
+	In many organisation network security is a major concern. Personal data, by law, has to be kept secure and if it is accidentally destroyed or stolen, fines lay be levied by the Information Commissoner's Office. Moreover, the consequences of data loss can be extremely severe. Statistics in 2018 showed that 93% of companies that lost their data centre for 10 days or more due to a disaster, filed for bankruptcy within one year of the disaster
+
+A new network can also be an opportunity to optimoise a team's performance and increase productivity. It may decrease individual workloads and result in better client service
+A new network often implies a change to an entire IT system. It's important to understand how compatible it is with existing systems. The level of user experience among employees in changing to a new system may be a factor. A team's background and familiarity with change will have a bearing on implementation and accepta,ce of a new network system. The whole temas's experience with new product integrations, and their anxieties about it, should be discussed and resolved. 
+
+The timescales for implementing the changeover need to be considered. Training may be required
+
+On going support from the supplier is an important consideration, especially in the period immediately after implementation
+
+A network manager sould have a wall-defined testing strategy in order to actively manage the network. The manager needs to know how the network performs under normal operating conditions. He or she should be able to answer questions such as :
+	How many users are on the network today, or on an average weekday ? 
+	What is the greatest expense incurred in having the current network ? 
+	What is the peak and average usage of the network backbone ? 
+
+The insight gained from the answers to these questions should help the network manager to predict network operation under a given load, or anticipate problems cerated by new services or applications. if network users a re reporting frequent problems, the manager needs to be able to evaluate what the problem is and where it is. He must determine the level of network services that users will find ... acceptable.
+
+Network managers way receive complaints from users on a regular basis. These complaints may include poor access times, no access to resources or network downtime. The more informations recorded regularly on each user, segment, peripheral, switch, bridge, and router, the easier the task of network maintenance becomes
+
+A network may use a combinations of wired and wireless connections. Wireless printers , for example will require no cables to be run and can be situated anuwhere within reach of an electrical outlet and the wireless access point. Wireless all-in-one printers that can print from anywhere in the office will save employees time. An auto power feature which turns tthe printer on when a job is sent will save on electricity costs
+
+When connectinf to the Internet,  productivity will be severely hampered if no broadband connection is available. If a broadband cable already runs down the street outside the office, then it will be inexpensive to install a broadband connection to the Ethernet handoff in the office. If there is no broadband connection in the area, many businesses will no be able to funtion efficiently

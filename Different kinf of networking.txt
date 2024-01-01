@@ -1,0 +1,77 @@
+Personal Area Network 
+	--> Provide data transmission between device in an individual workspace within a range of 10m
+	--> can be used to transmit data between devices or to connect to a higher level network or the Internet with one device taking the role of gateway
+	--> Devices may connect via USB or wirelessly using bluetooth
+
+
+Local Area Network 
+	--> Connect devices within a building or a group of adjacent buildings on a single site such as school
+	--> One LAN can be conneced to another over any distance, possibly in another country, through telephone lines and radio waves
+		Two types of LAN :
+			Client-server 	network 
+			P2P 			network
+
+Client-server architecture 
+	A LAN within an organisation is typically organised as client-server network
+		Composed of one or more servers, which are computers performing specific functions on the network. Some functions can be combined on a single server. A single powerful computer can act as both file server and print server
+	A print server is a dedicated appliance or central point of software. They help clients/users/devices connect to shared printers and they process or pass through spool files from a client to the printer.
+	A file server is a computer containing files available to all users connected to a local-area network (LAN).
+	
+	The clients are connected to the servers cia one or more switches or routers. The connections from the client devices to the switch can be wired or wireless
+
+	A large network may have several servers, each performing one or more functions, for example :
+	file server 	--> holds and maanges data for all the clients computers
+	web sever 		--> manages requests to access the internet 
+	mail server 	-->  manages the email system
+	print server 	--> collect information sent by client computers to a shared printer and prints everything in an orderly manner
+
+
+Peer to Peer Network
+	No central server 
+	Individual computers are connected to each other, either locally or over a WAN so that htey can share files. 
+In small LAN, such as in a home or small office, a peer to peer network is a good choice because : 
+		it is cheat to set up 
+		it enables unsers to share resources such as a printer or router
+		it is not difficult to maintain
+	P2P networks are also used by companies providing for example video on demand A problem arises when thousands
+
+
+Wide Area Network
+ Spans a large geographical area which may connect several LAN
+They are commonly established with leased lines from a telecomunication provider 
+Some WANs are built for one particularity organisation, commercial , educational and government organisation all use wide area networks
+other wans are built by internet service providers to provide connections from an organisation LAN to the internet
+
+	Advantages :
+		--> File sesrvers, email servers, backup srvers and database servers can all reside in one Head Office location. all the Branch Office can share data through the Head Office server
+		--> All data are synchronized through the Head Office server, which can provide up-to-date informations needed by all the branches
+		--> Backup and support are supplied by Head Office
+		--> Software ressources can be shared, and all offices will get updated versions of software at the same time
+		--> Workload can be distributed to local offices meaning less staff travel 
+
+	Disadvantages :
+		--> Setup costs are high 
+		--> Security is an issue. If a hacker is able to hack ibto the system, the personal data of millions of customers may be compromised. Security precautions such as firewall and secure routers may be expensive to install. Informations may be intercepted in transit so needs to be encrypted
+		--> Troubleshooting problems may be difficult. WANs often use public telephone lines for communications and if a line is broken or fails for some reason, business wil be affected 
+		--> Connectivity issues and slow internet speed may be frustrating for employees and customers
+
+
+Virtual Private Network
+	Routers can be used to connect geographically separated offic es to form a single network that spans multiple locations. A VPN uses a pair of routers to create a secure 	virtual private network. Each network uses its router to connect to the Internet and the routers establish a secure tunnel between themselves to exchange private 	information
+		- This is a much cheaper option than having a leased line to connect offices
+		- It is more flexible since an employee can use it from anywhere
+	
+	A corporate VPN is characterised by having the same organisation controlling both endpoints of the VPN.
+	An organisation wanting to set up a VPN signs up with a VPN service provider. The routers at both endpoints connect to this service are configured to provide a VPn that securely connects the two networks. 
+
+	All employees needing to use the VPn have a username and password. An employee my iniiate a connection from or from an office geographically separated from the Head Office
+	
+Personnal VPN
+	An individual may also use a VPn service to privde a secure tunnel between their computing device and the VPn service provider. Unlike a corporate VPN, the data is not encrypted all the way to each endpoint. A personal VPN service will be operated by a completely different compoany from say a bank or a social media site. When the data reaches the VPN service provider's data centre, it is decrypted and sent on to its final destination. (if the data was  encrypted by your browser using https, for example, the original encryption is left intact)
+	The forwarded data uses an IP address owned by the VPN service so that the user's IP address and location remains anonymous
+	A personal VPN offers protection to an individual away from home or the office,using Wi-Fi profided by, for example, a hotel, restaurant, library or trai. Even if the Wi-Fi connection has a password, there is no way of knowing who else is accessing the network, intercepting your communications and stealing bank details or other personal information
+	When travelling abroad, having a VPN connection means that the user can gain access to websites that are blocked by local service providers. Google and BBC websites, for example, are blocked in China by "The Great Firewall". China has also moved to block VPN
+	There are some free VPN providers but it is important to be careful in choosing a VPN provider. Criminal organisationss and malware creators can set up a free VPn service to actively harvest information and either use it or sell it
+
+	
+
