@@ -1,0 +1,17 @@
+git config --global user.name "Thomas Larmuseau"
+git config --global user.email "etu52004@henallux.be"
+
+//!\\ ne pas oublier de se déplacer dans le bon répertoire
+
+git init
+git add . 		--> ajoute tous les fichiers présent dans le commit 
+git status 		--> montres quelles fichiers ont été ajouté, modifié, supprimé avant le commit 
+git commit -m "Commentaire"	--> ajoute tous les fichiers envoyés dans le commit pour les envoyer sur la branche
+	-a 		--> ajoute automatiquement tous les fichiers modifiés,créés, supprimés
+notepad NomDuFichier.txt	--> Ouvre le fichier avec le notepad
+git branch nom		--> crée une branche
+git checkout nom 	--> se rend dans la branche en question
+git checkout master	--> retourne sur la branche principale
+git diff nom master	--> montre les différences entre la branche en question et le master
+git merge nom 		--> fusionne la branche en question avec la master
+git branch -d nom	--> supprime la branche
