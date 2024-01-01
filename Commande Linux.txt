@@ -1,0 +1,94 @@
+installer resolvconf 		pour travailler sur le réseau avec Linux
+/etc/network/interfaces		les parametres réseaux se trouvent dans le dossier 
+setxkbmap be 			pour mettre son clavier en azerty belge 
+ip addr show 			configurer ipv4	
+ip -6 addr show 		configurer ipv6	
+	- peut etre raccourci par	 ip a ou ip -6 a
+ne pas toucher a loopback
+ip link show 			MAC adresse
+ip route show			montre les routes qui sont créées
+cat [chemin d'un fichier]	affiche le contenu du fichier
+
+============================
+Faire une copie du fichier avant de le configurer au cas ou on fait une fausse manip
+
+cp /etc/network/intefaces /etc/network/interfaces.sav
+
+===============
+
+nano [chemin d'un fichier]	editer le contenu du fichier
+
+auto enp0s3 			signifie qu'il faut configurer automatiquement le réseau au démarrage
+iface enp0s3 inet dhcp		configure en dhcp enp0s3
+=====
+Pour configurer une ipv4 en static :
+iface enp0s3 inet static
+	address [ipv4]
+	netmask [masque  de sous réseau]
+	gateway [pas obligatoire}
+
+	dns-nameservers 8.8.8.8 1.1.1.1
+	dns-search henallux.be ( pas obligatoire)
+
+	up ip route add 10.10.10.0/24 via [IP dans le sous réseau]
+
+Pour configurer une ipv6 en static :
+iface enp0s3 inet6 static
+	address [ipv6]
+	netmask 64
+	gateway [Ipv6]
+=====
+attention au numlock 
+
+====
+Pour que les modifications soient prises en compte, il faut redémarrer le service réseau ou la machine 
+====
+
+reboot 		simple mais on ne voit pas si il y a une erreur dans notre configuration, impossible dans la pratqiue si on travaille sur un serveur de production 
+systemctl restart networking 	redemarre uniquement le service réseau, plus rapide qu'un reboot complet, n'affecte que le réseau et affiche une erreur en cas de mauvaise configuration
+en cas d'erreur, utuiliser la commande 		journalctl -xe 		pour obtenir une information plus détaillée 
+
+pour redémarrer qu'une seule interface :
+
+ifdown enp0s3	déconfigure l'interface enp0s3
+ifup enp0s3	configure votre interface enp0s3
+ifquery enp0s3	renvoit la liste des paramètres liés à l'interface enp0s3 dans le fichier interfaces
+
+cat /etc/hostname	donne le nom de la machine
+hostname [nom]		change le nom de la machine
+
+
+=====
+Configurer a chaud la machine (tout sera perdu apres le redémarrage)
+=====
+ip addr flush dev enp0s3	efface la configuration
+ip -6 addr flush dev enp0s3 	efface la config ipv6
+ip addr add [ipv4] dev enp0s3
+ip -6 addr add [ipv6] dev enp0s3
+ip addr del [ipv4]*
+ip -6 addr del [ipv6]
+
+configurer le dhcp a chaud :
+ip addr flush dev enp0s3
+ip addr show enp0s3	vérifie que tout est bien supp
+dhclient -v enp0s3	essaie d'avoir une requete dhcp d'un serveur	
+ps aux | grep dhclient	sort les process qui ont dhclient dans leur nom
+pkill dhclient 		tue les clients qui ont dhclient dans leurs nom
+/////
+Ne déconfigure pas l'addressage ip
+/////
+
+ip addr flush dev enp0s3 pour déconfigurer l'addressage ip
+Déconseillé d'ajouter un DNS a chaud 
+ip route de ldefault 	supprime la gateway par defaut 
+ip route add default via [ipv4]
+ip -6 route del default 	supprime la gateway ipv6
+
+ip link set enp0s3 down 	met l'interface down	
+ip link set enpàs3 up		met l'interface up
+ip link set dev enp0s3 	address aa:bb:cc:aa:bb:cc 	change la MAC adresse
+
+
+
+
+

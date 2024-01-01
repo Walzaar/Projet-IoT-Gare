@@ -1,0 +1,2 @@
+Partage de fichiers et d'imprimantes demande d'écho trafi entrant ICMPv4 : firewall trafic entrant 
+pour ping une autre machine

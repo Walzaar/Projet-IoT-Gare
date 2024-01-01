@@ -1,0 +1,13 @@
+DNS port 53 
+HTTP 80
+HTTPS 443
+
+SMTP : envoyer des mails  port 25
+POP3  reception de mail PORT 11à
+IMAP : reception des mails Port 143
+
+MDA MTUA OSEF
+
+tftp a utiliser uniquement localement car non sécurisé
+TCP peut remettre les segments dans le bon ordre ainsi que les renvoyer 
+UDP rapide mais pas fiable, ne sait pas remetrte les segments dans le bon ordre ne les renvoit pas non plus

@@ -1,0 +1,7 @@
+Applicative	: 
+Présentation	:
+Session		:
+Transport	: Port 		(16 bits)	Firewall
+Réseau 		: Adresse IP 	(32 bits)	Routeur
+Liaison 	: Adresse MAC 	(48 bits)	Switch
+Physique 	: support matériel		modem ( modulateur - demodulateur)
