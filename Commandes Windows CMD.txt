@@ -1,0 +1,69 @@
+TMP 	: répertoire des fichiers temporaire
+PATH	: la liste des répertoires conteannt les programmes que le système peut exécuter
+cd..	: se déplacer dans le répertoire parent
+cd \	: se déplacer a la racine
+dir 	:permet d'afficher la liste des fichiers et des répertoires dans le répertoire courant
+	-->	dir /?	:connaitres toutes les options 
+	-->	/a permet d'afficher les fichiers cachés
+	-->	/p permet d'interrompre l'affichage lorsque l'écran est plein
+	-->	/s permet l'affichage aussi dans les sous-répertoires
+	-->	/b utilise le format abrégé
+	-->	/q affiche le propriétaire du fichier
+	-->	/o permet de trier l'affichage des fichiers et répertoire
+			-->	n permet de trier par nom
+			--> - préfixe pour trier dans le sens inverse
+	
+mkdir	: crée un répertoire 
+mdir	: same
+	--> 	mkdir /?  connaitre toutes les options
+	--> ; séparer d'un point virgule pour créer plusieurs dossiers simultanément
+rmdir	: supprime un répertoire 
+rd	: same 
+	--> /s permet de supprimer un dossier et tous ses sous-répertoires
+	--> séparer d'un espace en indiquant le nom de chaque dossier , du plus loin au plus proche de la racine 
+copy	: copie un fichier vers une autre destination
+	-->	con : crée un fichier 
+		--> tapez votre texte puis appuyez sur F6 et ENTER pour confirmer
+echo	: écrit le texte qui suit
+	--> > suivi d'un nom de fichier pour mettre le texte dans ce fichier en supprimant ce qu'il y avait avant FONCTIONNE AUSSI POUR LES COMMANDES
+	--> >> suivi d'un nom de fichier pour mettre le texte a la suite du fichier FONCTIONNE AUSSI POUR LES COMMANDES 
+more	: affiche le contenu du fichier
+ren 	: permet de renommer un fichier, un répertoire
+del	: permet de supprimer des fichiers
+	--> /s supprime tous les fichiers spécifiés dans les répertoires et sous répertoires
+xcopy	: copie des fichiers ou des répertoires ainsi que ce qu'ils contiennent
+	--> /e copie les répertoires et les sous répertoires y compris les répertoires vides
+	--> /q n'affiche pas les noms de fichiers lors de la copie
+	--> /h copie éagelement les fichiers cachés et les fichiers systèmes
+	--> /t crée la structure répertoire mais ne copie pas les fichiers 
+	--> /y supprime la demande de confirmation de remplacement de fichiers de destiantion existants
+	--> /d copie les fichiers modifiés a partir de la date spécifié
+		--> :j-m-a jours mois années
+attrib 	: affiche ou modifie des attributs de fichiers
+		--> + définit un attribut
+		--> - efface un attribut
+			--> r lecture seule
+			--> s fichier systeme
+			--> h fichier masqué
+net user NomUtilisateur MotDePasse /add : permet d'ajouter un utilisateur en spécifiant son mot de passe
+net localgroup NomDeGroupe /add : permet d'ajouter un groupe
+	--> /delete pour supprimer 
+subst	: assigne un nom de volume à un répertoire /\ Exemple : subst W: c:\exercices\niv1
+find	: recherche une chaine de caracteres dans un  ou des fichiers  !!!!!!!!! Différent de linux 
+	--> /i insensible a la casse
+	--> /v affiche les fichiers qui ne contiennent pas la sélection
+	--> /n précise la ligne 
+--------------------------
+
+Jokers ou wildcards  ou caractères génériques
+
+?	: remplace  un seul caractère du nom ou l'extension d'un fichier
+*	: remplace un ensemble de caractères
+
+
+------------------
+
+Différence entre TMP et %TMP% 
+					: donne le chemin du répertoire des fichiers temporaire
+	Englober la commande avec des % précédé d'un ECHO permet de prendre le texte 
+		comme une commande et pas simplement une suite de caractères 
