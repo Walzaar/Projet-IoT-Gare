@@ -1,0 +1,23 @@
+i 	--> mode insertion
+		--> u : annuler des modifications erronées sur la ligne courante
+esc 	--> retour au menu principal
+Ctrl + v> mode visuel par bloc
+V	--> mode visuel par ligne
+v 	--> mode visuel
+		y : copier la partie sélectionnée avec les fleches de directions
+		p : colle la partie copiée la ouy se situe le curseur
+:	--> mode de commande étendu (écriture, enregistrement d'un fichier ou quitter Vim)
+x	--> supprimer le caractere sur le curseur
+
+--------
+
+:w	--> écrire(save) le fichier et rester en mode édition
+:wq	--> écrire ( save) le fichier ET quitter Vim
+:q!	--> quitter Vim en annulant les modification apportées
+
+--------
+
+k	--> vers le haut
+j	--> vers le bas
+l	--> vers la droite
+h	--> vers la gauche

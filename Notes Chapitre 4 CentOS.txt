@@ -1,0 +1,16 @@
+Un processus utilise des canaux numérotés appelés descripteurs de fichiers pour obtenir une entrée et envoyer une sortie. 
+Tous les processus disposent d'au moins trois descripteurs de fichiers pour commencer.
+
+L'Entrée standard (canal 0) lit l'entrée depuis le clavier. 
+
+La Sortie standard (canal 1) envoie la sortie normale vers le terminal.
+
+L'Erreur standard (canal 2) envoie les messages d'erreur vers le terminal. 
+
+Si un programme ouvre des connexions séparées avec d'autres fichiers, il peut utiliser des descripteurs de fichiers portant des numéros plus élevés.
+
+--------------------------------------------------------------
+
+Les pipelines et la redirection des E/S manipulent la sortie standard et l'entrée standard. 
+La redirection envoie la sortie standard vers ou obtient l'entrée standard depuis les fichiers. 
+Les pipes envoient la sortie standard vers ou obtiennent l'entrée standard depuis un autre processus.

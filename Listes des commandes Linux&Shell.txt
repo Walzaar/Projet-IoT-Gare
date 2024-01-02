@@ -1,0 +1,240 @@
+less est une commande Unix permettant de visualiser un fichier texte page par page
+(sans le modifier). 
+Sa fonction est similaire à la commande more, mais permet en plus de revenir 
+en arrière ou de rechercher une chaîne.
+
+touch est une commande Unix standard permettant de modifier le timestamp 
+de dernier accès et de dernière modification d'un fichier. 
+Cette commande permet également de créer un fichier vide.
+
+ls est une commande POSIX (abréviation de list en anglais), 
+qui permet de lister le contenu d'un répertoire.
+
+Echo est l'une des commandes les plus basiques et les plus fréquemment utilisée sous Linux.
+Les arguments passés à echo sont affichés sur la sortie standard. 
+Echo est couramment utilisé dans les scripts shell (bash, Zsh et Ksh) 
+pour afficher un message ou afficher les résultats d'autres commandes
+
+tty est une commande Unix qui affiche sur la sortie standard 
+le nom du fichier connecté sur l'entrée standard.
+ L'origine du nom tty vient de l'anglais teletypewriter, 
+qui se traduit téléscripteur, et a été abrégé en « TTY ».
+
+Alt + F2 : ouvre boite de dialogue ( équivalent du win + R)
+
+Tout d'abord, sélectionnez le texte.
+
+Survolez la fenêtre de destination avec la souris, 
+puis cliquez sur le bouton central de la souris, une seule fois, 
+pour coller le texte à l'emplacement du curseur.
+
+La commande cat de Linux est l'une des commandes les plus utiles 
+que vous pouvez apprendre. Elle tire son nom du mot concaténer 
+(concatenate en anglais) et vous permet de créer,
+de fusionner ou d'imprimer des fichiers dans l'écran de résultat standard
+ou vers un autre fichier et bien plus encore.
+
+ CP signifie copie. Cette commande est utilisée pour copier des fichiers
+ ou un groupe de fichiers ou de répertoires.
+ Il crée une image exacte d'un fichier sur un disque avec un nom de fichier différent.
+
+La commande id sert à afficher des informations sur l'utilisateur actuellement connecté. 
+Il est également possible de demander des informations élémentaires sur un autre utilisateur, 
+en passant son nom d'utilisateur comme premier argument de la commande id.
+
+Pour afficher l'utilisateur associé à un fichier ou à un répertoire, 
+utilisez la commande ls -l.
+La troisième colonne indique le nom de l'utilisateur
+
+Pour afficher les informations relatives au processus, 
+utilisez la commande ps. 
+
+Par défaut, seul les processus du shell courant sont affichés. 
+Ajoutez l'option a pour afficher tous les processus liés à un terminal. 
+
+Pour afficher l'utilisateur associé à un processus, ajoutez l'option u. 
+La première colonne indique le nom de l'utilisateur 
+
+Par défaut, les systèmes utilisent un simple « fichier plat », 
+le fichier /etc/passwd, pour stocker les informations 
+concernant les utilisateurs locaux
+
+
+1-username:2-password:3-UID:4-GID:5-GECOS:6-/home/dir:7-shell
+
+1
+
+username est la correspondance entre un UID et un nom d'utilisateur, 
+pour faciliter la lecture par les utilisateurs humains.
+
+2
+
+password est, historiquement, l'emplacement où les mots de passe étaient 
+conservés sous forme chiffrée. De nos jours, ils sont stockés dans un fichier distinct,
+appelé /etc/shadow.
+
+3
+
+UID est un identifiant d'utilisateur, un numéro qui identifie l'utilisateur
+ au niveau le plus fondamental.
+
+4
+
+GID est le numéro d'identification du groupe principal de l'utilisateur.
+ Les groupes seront abordés dans un instant.
+
+5
+
+Le champ GECOS correspond à du texte arbitraire, et contient généralement 
+le nom réel de l'utilisateur.
+
+6
+
+/home/dir est l'emplacement des données et fichiers de configuration
+ personnels de l'utilisateur.
+
+7
+
+shell est un programme exécuté lors de la connexion de l'utilisateur.
+ Pour un utilisateur standard, il s'agit normalement du programme qui fournit 
+l'invite de ligne de commande de l'utilisateur.
+
+toutes les commandes exécutées avec sudo sont journalisées 
+par défaut dans /var/log/secure.
+
+useradd nomutilisateur définit des valeurs par défaut raisonnables
+pour tous les champs de /etc/passwd quand on l'exécute sans options. *
+La commande useradd ne définit pas de mot de passe valide par défaut, et 
+l'utilisateur ne peut pas se connecter avant qu'un mot de passe ait été défini.
+
+usermod modifie les utilisateurs existants
+Options de usermod :
+
+ 
+
+-c, --comment COMMENTAIRE
+
+Ajouter une valeur comme un nom complet au champ GECOS.
+
+-g, --gid GROUPE
+
+Spécifier le groupe primaire du compte utilisateur.
+
+-G, --groups GROUPES
+
+Spécifier une liste de groupes supplémentaires pour le compte utilisateur.
+
+-a, --append
+
+S'utilise avec l'option -G pour ajouter l'utilisateur aux groupes 
+supplémentaires indiqués, sans le supprimer d'autres groupes.
+
+-d, --home REPERTOIRE_PERSONNEL
+
+Spécifier un nouveau répertoire personnel pour le compte utilisateur.
+
+-m, --move-home
+
+Déplacer le répertoire personnel d'un utilisateur vers un nouvel emplacement. 
+Doit être utilisé avec l'option -d.
+
+-s, --shell SHELL
+
+Spécifier un nouveau shell de connexion pour le compte d'un utilisateur.
+
+-L, --lock
+
+Verrouiller le compte d'un utilisateur
+
+-U, --unlock
+
+Déverrouille le compte d'un utilisateur.
+
+userdel supprime des utilisateurs
+
+userdel nomutilisateur supprime l'utilisateur dans /etc/passwd mais,
+par défaut, laisse le répertoire personnel intact.
+
+userdel -r nomutilisateur supprime l'utilisateur et son répertoire personnel.
+
+
+L'algorithme utilisé par défaut pour le hachage des mots de passe
+ peut être changé par l'utilisateur root en exécutant 
+la commande authconfig --passalgo 
+avec l'un des arguments suivants : md5, sha256 ou sha512, selon le besoin.
+
+1-name:2-password:3-lastchange:4-minage:5-maxage:6-warning:7-inactive:8-expire:9-blank
+
+1
+
+Le nom de connexion. Ce doit être un nom de compte valide sur le système.
+
+2
+
+Le mot de passe chiffré. Un champ de mot de passe qui commence par un point d'exclamation indique que le mot de passe est verrouillé.
+
+3
+
+La date de la dernière modification du mot de passe, représentée par le nombre de jours depuis le 01/01/1970.
+
+4
+
+Le nombre de jours minimal avant qu'un mot de passe puisse être changé, 0 signifiant « pas d'âge minimal nécessaire ».
+
+5
+
+Le nombre de jours maximal avant qu'un mot de passe puisse être changé.
+
+6
+
+La période d'avertissement de l'expiration prochaine du mot de passe. Représentée en jours, 0 signifiant « aucun avertissement ».
+
+7
+
+Le nombre de jours pendant lesquels un compte demeure actif après l'expiration du mot de passe. Pendant cette période, un utilisateur peut toujours se connecter au système pour changer son mot de passe. Après le nombre de jours spécifié, le compte est verrouillé puis devient inactif.
+
+8
+
+La date d'expiration du compte, représentée par le nombre de jours depuis le 01/01/1970.
+
+9
+
+Ce champ vierge est réservé à un usage ultérieur.
+
+chage -d 0 nomutilisateur force la mise à jour du mot de passe
+ à la connexion suivante.
+
+chage -l nomutilisateur liste les paramètres actuels d'un nom d'utilisateur.
+
+La commande chage -E AAAA-MM-JJ username fait expirer
+ un compte à une date spécifique.
+
+
+Avec l'option -L, la commande usermod peut « verrouiller » un compte.
+
+le compte peut être déverrouillé avec usermod -U NOMUTILISATEUR
+
+sudo usermod -L -e 1 elvis permet de faire expirer un compte
+
+demander un changement de mdp régulier avec  chage -M 90 romeo
+
+
+$PATH affiche tous les répertoires qui contiennent un executable
+
+----------------------------------
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+DANS UN TERMINAL
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+CTRL + C met fin au processus en cours
+
+POUR COPIER COLLER 
+	SHIFT CTRL + C 
+	SHIFT CTRL + V
+
+----------------------------------

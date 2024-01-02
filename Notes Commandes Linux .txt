@@ -1,0 +1,7 @@
+Cpier un fichier cp file1 file2				| cp file1 file2 file3 directory_de_destination
+Déplacer un fichier : mv file1 file2			| mv file1 file2 file3 directory_de_destination
+Supprimer un fichier rm file1					| rm -f file1 file2 file3
+Créer un répertoire mkdir directory1			| mkdir -p par1/par2/directory /\ Attention avec le create parent les erreurs de saisies ne sont pas détectées
+Copier un répertoire cp -r directory1 directory2	| cp -r directory1 directory2 directory3 directory_de_destination 
+Déplacer un répertoire mv directory1 directory2		| mv directory1 directory2 directory3 directory_de_destiantion 
+Supprimer un répertoire rm -r directory1			| rm -rf directory1 directory2 directory3 

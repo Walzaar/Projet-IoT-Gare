@@ -1,0 +1,18 @@
+RAID 1 : Assurer la redondance des fichiers  
+( fait une copie des fichiers du disque 1 sur le disque 2) 
+si le premier tombe en panne , le deuxiem sert de backup
+La taille totale disponible vaut la taille du plus petit des disques dur
+
+RAID 0 : Améliorer les performances des transferts
+la capacité totale est égales à l'addition de l'espace de deux disques durs si ils ont la meme taille
+Pas de duplication des données, si l'un tombe en panne toutes les données sont inutilisables
+
+RAID 5 : Assure la redondance des fichiers ET améliore la performances des transferts des fichiers
+Utilise au moins 3 disques durs
+Résiste à la panne d'un seul disque dur
+La capacité vaut l'addition de tous les disques - 1
+
+
+
+MD0 ET PAS MDO
+Backup et restauration :
