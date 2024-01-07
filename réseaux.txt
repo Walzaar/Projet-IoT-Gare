@@ -1,0 +1,100 @@
+Applications: 
+
+	
+	Couche 7 :	Application
+
+		Concerne les applications que vous utilisez ( mail, navigateur web, FTP)
+
+	Couche 6 :	Prsentation
+		
+		Veille a ce que les informations soient lisibles pour la couche application en formatant
+		et en structurant les données
+
+	Couche 5 :	Session
+		
+		Établissement	des sessions entre deux Hotes
+		Gestion		des sessions entre deux Hotes
+		Terminaison		des sessions entre deux Hotes
+
+
+
+Mise en Réseau :
+
+
+Segments	Couche 4 :	
+
+			Fichier téléchargé sera transporté par segments
+			Protocole TCP(données fiables pour la synchronisation entre zones) et UDP(rapide pour les requetes)
+
+Paquets	Couche 3 :	Réseau Mettre la lettre dans une enveloppe
+
+			Connectivité
+			Sélection du chemin (rootage)
+			IPv4
+			IPv6
+	
+
+Trames	Couche 2 :	Liaison de Données 
+	
+			S'assure que les données sont au bon format
+			Détecte les erreurs
+			S'assure que les données sont bien fournies
+			Adresses MAC
+			Trames Ethernet
+
+		Couche 1 :	Physique	
+	
+			Niveau de tension
+			Les débits
+			Les connecteurs physiques
+			Synchronisation
+	Pour
+	Le
+	Réseau
+	Tout
+	Se
+	Passe
+	Automatiquement
+
+
+Étapes du cycle de vie DHCP:
+
+	1. Affectation		:	acquisition des paramètres par le client,
+	2. Réallocation		:	le client redemande au serveur ses paramètres toujours valides,
+	3. Opérations "normales":	utilisation des paramètres fournis,
+	4. Renouvellement		: 	le client tente de renouveler son bail,
+	5. Réafectation		: 	le client tente de renouveler son bail auprès d’un autre serveur si l’ancien est injoignable,
+	6. Libération		: 	le client libère le bail.
+
+
+Les messages DHCP:
+
+	– DHCP DISCOVER = diffusion du client pour localiser les serveurs disponibles.
+	– DHCP OFFER = réponse du serveur avec les paramètres de configuration.
+	– DHCP REQUEST = message client (3 possibilités):
+		1. qui demande les paramètres à un serveur.
+		2. qui confirme la validité des adresses précédemment allouées.
+		3. qui étend le bail sur une adresse réseau en particulier
+	– DHCP ACK = message du serveur avec les paramètres de configuration.
+	– DHCP NACK = message du serveur indiquant que le bail a expiré.
+	– DHCP DECLINE = message du client indiquant que l’adresse réseau est déjà utilisée.
+	– DHCP RELEASE = message du client libérant l’adresse réseau et annulant le bail.
+
+DNS 	PORT 53
+HTTP	PORT 80
+HTTPS	PORT 443
+SMTP	PORT 25	Simple Mail Transfer Protocol	envoyer des mails
+POP	PORT 110						travailler localement sur des mails
+IMAP	PORT 143	Internet Mail Access Protocol	travailler en cloud sur des mails
+FTP	PORT 21	File Transfer Protocol
+TFTP	PORT 69						Pas sécurisé
+
+
+
+
+
+
+
+
+
+
